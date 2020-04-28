@@ -1,0 +1,7 @@
+{
+"plugins": [
+    // Tell eslint about the require plugin
+    "require"
+],
+"extends": "react-app"
+}
