@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bukschop/static/css/main.c5bb5416.chunk.css",
+    "main.js": "/bukschop/static/js/main.77783a3c.chunk.js",
+    "main.js.map": "/bukschop/static/js/main.77783a3c.chunk.js.map",
+    "runtime-main.js": "/bukschop/static/js/runtime-main.d70ada7a.js",
+    "runtime-main.js.map": "/bukschop/static/js/runtime-main.d70ada7a.js.map",
+    "static/css/2.89f067aa.chunk.css": "/bukschop/static/css/2.89f067aa.chunk.css",
+    "static/js/2.bc5a483b.chunk.js": "/bukschop/static/js/2.bc5a483b.chunk.js",
+    "static/js/2.bc5a483b.chunk.js.map": "/bukschop/static/js/2.bc5a483b.chunk.js.map",
+    "index.html": "/bukschop/index.html",
+    "precache-manifest.33066ac15bd89d322c34d471d5dd1a7e.js": "/bukschop/precache-manifest.33066ac15bd89d322c34d471d5dd1a7e.js",
+    "service-worker.js": "/bukschop/service-worker.js",
+    "static/css/2.89f067aa.chunk.css.map": "/bukschop/static/css/2.89f067aa.chunk.css.map",
+    "static/css/main.c5bb5416.chunk.css.map": "/bukschop/static/css/main.c5bb5416.chunk.css.map",
+    "static/js/2.bc5a483b.chunk.js.LICENSE.txt": "/bukschop/static/js/2.bc5a483b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d70ada7a.js",
+    "static/css/2.89f067aa.chunk.css",
+    "static/js/2.bc5a483b.chunk.js",
+    "static/css/main.c5bb5416.chunk.css",
+    "static/js/main.77783a3c.chunk.js"
+  ]
+}
