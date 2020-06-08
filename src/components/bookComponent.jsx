@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import '../stylesheet/goods.css';
-// import Product from './product';
-import AddDeleteComponent from './addToCart/addComponent';
-import MainInfo from './addToCart/mainInfo';
+import '../stylesheet/bookstore.css';
+import CartComponent from './subComponents/cartComponent';
+import InfoComponent from './subComponents/infoComponent';
 
-class GoodsComponent extends React.Component {
+class BookContainer extends React.Component {
 
   handleDisplayButton = () => {
     const {item} = this.props;
@@ -12,11 +11,11 @@ class GoodsComponent extends React.Component {
   };
 
   render() {
-    const {list, item, onIncrement, onDecrement, onDelete, onFavorites, onDisplay, stateObject } = this.props;
+    const {list, item, onIncrement, onFavorites, onDisplay} = this.props;
     return (
-      <React.Fragment>
-        <div className="book-desc">
-          <MainInfo
+      <div className="bookComponent">
+        <div className="book-desc" >
+          <InfoComponent
             onFavorites={onFavorites}
             onDisplay={onDisplay}
             list={list}
@@ -26,19 +25,17 @@ class GoodsComponent extends React.Component {
             <span className="price">{item.price}</span>
           </div>
           <div className="addDeleteBox">
-            <AddDeleteComponent
+            <CartComponent
               onIncrement={onIncrement}
-              onDecrement={onDecrement}
-              onDelete={onDelete}
               list={list}
               item={item}
             />
           </div>
           {this.handleDisplayButton()}
         </div>
-      </React.Fragment>
+      </div>
     );
   };
 }
 
-export default GoodsComponent;
+export default BookContainer;

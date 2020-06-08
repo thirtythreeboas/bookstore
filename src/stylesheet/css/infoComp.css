@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+}
+
+.wrapper img {
+  width: 130px;
+  height: 200px;
+}
+
+.main-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.main-data p {
+  font-size: 20px;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.main-data div {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  padding-left: 5px;
+}
+
+.weight {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.weight::before {
+  content: "вес в г.: ";
+}

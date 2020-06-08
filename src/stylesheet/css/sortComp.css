@@ -1,0 +1,43 @@
+.sort {
+  display: flex;
+  width: 800px;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  background-color: #FFFACD;
+  border-radius: 5px;
+  justify-content: start;
+}
+.sort h3 {
+  margin: 0 15px 0 0;
+}
+
+.sort button {
+  background-color: #fff280;
+  transition: 0.3s;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 0 20px;
+}
+.sort button:hover {
+  background-color: #ffe600;
+}
+.sort button:focus {
+  outline: 0;
+}
+.sort button:nth-child(5n) {
+  background-color: #99e6ff;
+}
+.sort button:nth-child(5n):hover {
+  background-color: #4dd2ff;
+}
+
+.sort button:nth-child(6n) {
+  background-color: #F4A460;
+}
+.sort button:nth-child(6n):hover {
+  background-color: #ee7811;
+}
+svg {
+    pointer-events: none;
+}

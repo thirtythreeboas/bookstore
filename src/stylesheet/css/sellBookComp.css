@@ -1,0 +1,52 @@
+.sell-info {
+  width: 800px;
+  background-color: #fff280;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.sell-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.sell-cont img {
+  border: 2px solid #665c00;
+  width: 130px;
+  height: 200px;
+}
+
+.sell-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.sell-data p {
+  display: block;
+  max-width: 270px;
+  font-size: 20px;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.sell-data div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-name {
+  padding: 5px;
+}
+
+.sell-desc {
+  display: flex;
+  width: 300px;
+  word-break: break-word;
+}

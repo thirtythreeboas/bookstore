@@ -1,0 +1,105 @@
+@import "./css/addBookComp.css";
+@import "./css/bookComp.css";
+@import "./css/cartComp.css";
+@import "./css/infoComp.css";
+@import "./css/sellBookComp.css";
+@import "./css/sortComp.css";
+
+/* NavBar component styles */
+
+.fixedNav {
+  overflow: hidden;
+  background-color: #FFFACD;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px solid #ffe600;
+}
+
+.hoverResetBtn {
+  background: #fff280;
+}
+
+.hoverResetBtn:hover {
+  background: #ffe600;
+}
+
+.hoverResetBtn:focus {
+  outline: 0 !important;
+}
+
+.hoverBookBtn {
+  background: #fff280;
+}
+
+.hoverBookBtn:hover {
+  background: #ffe600;
+}
+
+.hoverBookBtn:focus {
+  outline: 0 !important;
+}
+
+.searchBtn {
+  font-family: 'Roboto', sans-serif;
+  background: #fff280;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  transition: 0.3s;
+}
+
+.searchBtn:hover {
+  background: #ffe600;
+}
+
+.fromStl {
+  padding: 7px;
+  margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
+  border: 0.03em solid #26262b;
+  border-radius: 5px;
+  background-color: #fff280;
+  color: #000;
+}
+
+.fromStl:focus {
+  outline: 0;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+/* Product component styles */
+
+.shopList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 67px;
+  max-width: 900px;
+}
+
+/* common button styles */
+
+.custom-but {
+  padding: 5px;
+  text-align: inherit;
+  background: 0;
+  border: none;
+  transition: 0.3s;
+}
+
+.custom-but:hover {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #EEE8AA;
+}
+
+.custom-but:focus {
+  outline: 0 !important;
+}

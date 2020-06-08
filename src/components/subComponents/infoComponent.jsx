@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import '../../stylesheet/goods.css';
+import '../../stylesheet/bookstore.css';
 
-const MainInfo = ({item, list, onFavorites, onDisplay }) => {
+const InfoComponent = ({item, list, onFavorites, onDisplay }) => {
+
   const favoritesBox = () => {
     const styles = {
       color: '#DC143C',
@@ -12,22 +13,19 @@ const MainInfo = ({item, list, onFavorites, onDisplay }) => {
       <button
         style={styles}
         className="custom-but"
-        onClick={() => onFavorites(item)}
-      >
+        onClick={() => onFavorites(item)}>
         В избранном
       </button>
      :
       <button
         className="custom-but"
-        onClick={() => onFavorites(item)}
-      >
+        onClick={() => onFavorites(item)}>
         В избранное
       </button>
   };
 
   const showDescription = () => {
     const styles = {
-      // backgroundColor: '#7FFFD4',
       color: '#009900',
       borderRadius: '5px',
       textDecoration: 'underline',
@@ -65,4 +63,4 @@ const MainInfo = ({item, list, onFavorites, onDisplay }) => {
   );
 }
 
-export default MainInfo;
+export default InfoComponent;

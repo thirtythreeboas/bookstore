@@ -1,0 +1,63 @@
+.book-desc {
+  width: 800px;
+  background: #FFFACD;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.priceCont {
+  max-width: 120px;
+}
+
+.price {
+  display: block;
+  width: 100px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.price::before {
+  content: "цена: ";
+}
+
+.price::after {
+  content: "р."
+}
+
+.addDeleteBox {
+  display: flex;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.addDeleteBox span {
+  line-height: 40px;
+  background: #26262b;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 7px;
+  width: 40px;
+  height: 40px;
+
+}
+
+.addDeleteBox button {
+  height: 40px;
+  border-radius: 7px;
+}
+
+.break {
+  flex-basis: 100%;
+  text-align: justify;
+}
