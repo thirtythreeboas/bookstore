@@ -1,6 +1,6 @@
 {
-  "homepage": "http://thirtythreeboa.github.io/bukschop",
-  "name": "magazik",
+  "homepage": "http://thirtythreeboa.github.io/bookstore",
+  "name": "bookstore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
