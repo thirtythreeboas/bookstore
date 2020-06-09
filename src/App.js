@@ -153,15 +153,18 @@ class App extends React.Component {
     return sum;
   };
   handleReset = () => {
-    const values = this.state.data.map(v => {
-      v.amount = 0;
-      v.addToFav = false;
-      v.showDesc = false;
-      return v;
+    const data = [...this.state.data];
+    data.map(key => {
+      key.amount = 0;
+      key.addToFav = false;
+      key.showDesc = false;
     });
+    data.sort((a,b) =>
+      (a.key > b.key) ? 1 : ((b.key > a.key) ? -1 : 0)
+    );
     this.setState(
       prevState => ({
-        values,
+        data,
         createdProd: []
       })
     );
@@ -223,26 +226,25 @@ class App extends React.Component {
     }
   };
   handleSort = evt => {
-    let arr = [...this.state.data];
+    let data = [...this.state.data];
     let name = evt.name;
     if (name === "name") {
-      arr.sort((a,b) =>
+      data.sort((a,b) =>
       (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
     } else if (name === "author") {
-      arr.sort((a,b) =>
+      data.sort((a,b) =>
       (a.author > b.author) ? 1 : ((b.author > a.author) ? -1 : 0));
     } else if (name === "price") {
-      arr.sort((a,b) =>
+      data.sort((a,b) =>
       (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0));
     } else if (name === 'reverse') {
-      arr.reverse();
+      data.reverse();
     } else if (name === "default") {
-      arr.sort((a,b) =>
+      data.sort((a,b) =>
       (a.key > b.key) ? 1 : ((b.key > a.key) ? -1 : 0));
     }
-    this.setState({data: arr});
+    this.setState({data});
   };
-  // Сорт компонент
 
   render () {
     return (
