@@ -11,7 +11,7 @@
     "bootstrap-icons": "^1.0.0-alpha4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +37,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^9.33.0",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-require": "0.0.1",
     "gh-pages": "^2.2.0"
